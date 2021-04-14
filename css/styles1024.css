@@ -1,0 +1,45 @@
+:root {
+    --nav-bg-color: #2F4F4F;
+    --nav-hover-color: rgba(105,105,105, .5);
+  }
+@media (min-width: 1024px){
+    .menu {
+        height: 8rem;
+        border-bottom: .7rem solid white;
+        box-shadow: .5rem 0 1.5rem #000;
+        transition: all .3s ease;
+    }
+    .logo {
+        font-size: 3.5rem;
+        transition: all .3s ease;
+        width: 32%;
+    }
+    .btn_menu {
+        display: none;
+    }
+    .menu_list {
+        margin-right: 1.5rem;
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: static;
+        background-color: var(--nav-bg-color);
+        border-bottom: none;
+    }
+    .menu_list li{
+        width: auto;
+        border-bottom: none;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    .menu_list li a {
+        font-size: 2rem;
+    }
+    .menu_list li:hover {
+        background-color: var(--nav-hover-color);
+        border-bottom: none;
+    }
+}

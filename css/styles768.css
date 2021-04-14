@@ -1,0 +1,55 @@
+@media (min-width: 768px){
+    .menu {
+        height: 12rem;
+        border-bottom: .7rem solid white;
+        box-shadow: .5rem 0 1.5rem #000;
+        transition: all .3s ease;
+    }
+    .logo {
+        font-size: 4.5rem;
+        transition: all .3s ease;
+    }
+    .btn_menu {
+        font-size: 6.5rem;
+        margin: 0 2rem 0 0;
+    }
+    .menu_list {
+        height: calc(100% - 6.5rem);
+    }
+    .menu_list li{
+        font-size: 4rem;
+        padding: 2.8rem;
+    }
+    .show {
+        top: 12rem;
+        transition: all .5s ease;
+    }
+}
+
+/* @media (min-width: 1024px){
+    .menu {
+        height: 18rem;
+        border-bottom: .7rem solid white;
+        box-shadow: .5rem 0 1.5rem #000;
+        transition: all .3s ease;
+    }
+    .logo {
+        font-size: 7.5rem;
+        transition: all .3s ease;
+    }
+    .btn_menu {
+        font-size: 12rem;
+        margin: 0 2rem 0 0;
+    }
+    .menu_list {
+        height: calc(100% - 6.5rem);
+    }
+    .menu .menu_list li{
+        font-size: 5rem;
+        padding: 4.8rem;
+    }
+    .show {
+        top: 18rem;
+        transition: all .5s ease;
+    }
+} */

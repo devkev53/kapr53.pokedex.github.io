@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pokedex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
     <!-- Mis Scripts -->
     <script src="./js/myjs.js"></script>
     <!-- Mis Estilos -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles768.css">
+    <link rel="stylesheet" href="./css/styles1024.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <nav class="menu">
-            <picture class="logo">
-                <img src="./assets/img/pokeball_PNG24.png" alt="">
-            </picture>
-            <ul>
-                <li><a href="">What is KodePrint..?</a></li>
-                <li><a href="">about this.!</a></li>
+            <a href="./index.html">
+                <picture class="logo">
+                    <img src="./assets/img/pokeball_PNG24.png" alt="" width="50">
+                    <span>POKÉDEX</span>
+                </picture>
+            </a>
+            <ul class="menu_list">
+                <li><a href="#">What is KodePrint..?</a></li>
+                <li><a href="#">About this.!</a></li>
             </ul>
+            <span class="btn_menu">
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </span>
         </nav>
-        <span class="btn_menu">
-            <i class="fa fa-bars"></i>
-        </span>
     </header>
 </body>
 </html>

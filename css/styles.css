@@ -1,3 +1,7 @@
+:root {
+    --nav-bg-color: #2F4F4F;
+    --nav-hover-color: rgba(105,105,105, .5);
+  }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,4 +13,70 @@ html {
 body {
     font-size: 1.6rem;
     background-color: #ddd;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    height: 6.5rem;
+    background-color: var(--nav-bg-color);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .3rem solid white;
+    box-shadow: .2rem 0 1rem #000;
+    transition: all .3s ease;
+}
+.menu a {
+    text-decoration: none;
+    /* width: 18%; */
+    transition: all .3s ease;
+}
+.logo img {
+    /* width: 100%; */
+    transition: all .3s ease;
+}
+.logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 0 0 1rem;
+    transition: all .3s ease;
+}
+.btn_menu {
+    font-size: 3.5rem;
+    margin: 0 1rem 0 0;
+}
+.menu_list {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 6.5rem);
+    flex-direction: column;
+    top: -100vh;
+    align-items: center;
+    list-style: none;
+    background-color: var(--nav-hover-color);
+    transition: all .5s ease;
+}
+.menu_list li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    border-bottom: .2rem solid var(--nav-bg-color);
+}
+.menu_list li a{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.menu_list li:hover {
+    background-color: var(--nav-bg-color);
+    border-bottom: .2rem solid white;
+}
+.show {
+    top: 6.5rem;
+    transition: all .5s ease;
 }
