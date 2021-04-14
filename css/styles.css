@@ -15,6 +15,8 @@ body {
     background-color: #ddd;
     font-family: 'Akaya Kanadaka', cursive;
 }
+
+/* Area del Menu de navegacion  */
 .menu {
     display: flex;
     width: 100%;
@@ -79,4 +81,55 @@ body {
 .show {
     top: 6.5rem;
     transition: all .5s ease;
+}
+
+/* Area del contenedor del form y las cards */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: 	#696969;
+}
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+}
+.form_search_pk {
+    display: flex;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.form_search_pk input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+}
+.container {
+    width: 90%;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: .3rem solid var(--nav-bg-color);
+    border-radius: 4rem;
+    background: linear-gradient(to bottom right, #C71585, #FFC0CB);
+    margin: 2rem 2rem 3rem 2rem;
+}
+.img_container {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+}
+.img_container img {
+    width: 100%;
+    margin-top: -4rem;
+}
+.noName {
+    font-size: 2.5rem;
 }
