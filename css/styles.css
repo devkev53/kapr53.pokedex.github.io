@@ -114,6 +114,7 @@ section {
 }
 .card {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     border: .3rem solid var(--nav-bg-color);

@@ -24,6 +24,10 @@
         top: 12rem;
         transition: all .5s ease;
     }
+
+    .card {
+        width: 40%;
+    }
 }
 
 /* @media (min-width: 1024px){
