@@ -129,7 +129,7 @@ section {
     justify-content: center;
     border: .3rem solid #fff;
     border-radius: 4rem;
-    background: linear-gradient(to bottom right, #C71585, #FFC0CB);
+    background: linear-gradient(to bottom right, #C71585, #ffffff);
     margin: 2rem 2rem 3rem 2rem;
     transition: .6s;
 }
