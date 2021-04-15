@@ -8,7 +8,6 @@
         border-bottom: .7rem solid white;
         box-shadow: .5rem 0 1.5rem #000;
         transition: all .3s ease;
-        position: static;
     }
     .logo {
         font-size: 3.5rem;
@@ -27,29 +26,34 @@
         align-items: center;
         position: static;
         background-color: var(--nav-bg-color);
-        border-bottom: none;
+        border-bottom: 0;
     }
     .menu_list li{
         width: auto;
-        border-bottom: none;
-        border-radius: 1.5rem;
-        padding: 1rem;
+        border-bottom: 0;
+        border-radius: .2rem;
+        padding: 2.8rem;
         margin: 0 1rem;
     }
     .menu_list li a {
         font-size: 2rem;
     }
     .menu_list li:hover {
-        background-color: var(--nav-hover-color);
-        border-bottom: none;
+        background-color: rgba(255, 255, 255, .9);
+        border-bottom: 1rem solid var(--nav-bg-color);
+        transition: .6s;
+    }
+    .menu_list li:hover a{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--nav-bg-color);
+        transform: scale(1.2);
     }
 
     main {
-        margin-top: 0;
+        margin-top: 12rem;
     }
     .form_search_pk {
-        position: static;
-        margin: 0 0 0 0;
         width: 50%;
     }
     .form_search_pk input {
@@ -62,11 +66,24 @@
         width: 29%;
         height: 25rem;
     }
+
+    .kodeprint picture img {
+        width: 4%;
+        transition: all .3s ease;
+    }
+
 }
 
 @media (min-width: 1280px) {
     .card {
         width: 22%;
         height: 25rem;
+    }
+    .kodeprint picture img {
+        width: 3%;
+        margin-right: .5rem;
+    }
+    .links a {
+        font-size: 2rem;
     }
 }

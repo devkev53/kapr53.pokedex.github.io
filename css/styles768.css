@@ -51,6 +51,11 @@
     .noName {
         font-size: 2.2rem;
     }    
+
+    .links a {
+        font-size: 3rem;
+        transition: all .3s ease;
+    }
 }
 
 /* @media (min-width: 1024px){

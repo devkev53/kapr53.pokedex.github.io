@@ -1,3 +1,27 @@
+let ubicacion = window.pageYOffset;
+window.onscroll = function () {
+    let desplazamiento = window.pageYOffset
+    if (window.screen.width <= 600){
+        var remplus = "9rem";
+        var remmin = "-9rem";
+    }else if(window.screen.width <= 1024){
+        var remplus = "14rem";
+        var remmin = "-14rem";
+    }else {
+        var remplus = "10rem";
+        var remmin = "-10rem";
+    }
+    if (ubicacion >= desplazamiento) {
+        document.querySelector('.menu').style.top = "0";
+        document.querySelector('.form_search_pk').style.top = remplus;
+        document.querySelector('.myfooter').style.bottom = "0";
+    } else {
+        document.querySelector('.menu').style.top = remmin;
+        document.querySelector('.form_search_pk').style.top = remmin;
+        document.querySelector('.myfooter').style.bottom = remmin;
+    }
+    ubicacion = desplazamiento;
+}
 function showMenu() {
     var menu = document.querySelector('.menu_list');
     if (menu){

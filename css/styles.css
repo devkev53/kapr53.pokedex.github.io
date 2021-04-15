@@ -90,7 +90,7 @@ header {
 
 /* Area del contenedor del form y las cards */
 main {
-    margin-top: 6.5rem;
+    margin: 6.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,7 +129,7 @@ section {
     justify-content: center;
     border: .3rem solid #fff;
     border-radius: 4rem;
-    background: linear-gradient(to bottom right, #C71585, #FFC0CB);
+    background: linear-gradient(to bottom right, #C71585, #ffffff);
     margin: 2rem 2rem 3rem 2rem;
     transition: .6s;
 }
@@ -188,6 +188,59 @@ section {
     margin: 0 .2rem;
 }
 
+/* Iniciando los estilos del footer */
+footer {
+    display: flex;
+    background: var(--nav-bg-color);
+    justify-content: center;
+    width: 100%;
+    border-top: .3rem solid #000;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    transition: .6s;
+    padding: .2rem 0;
+}
+.kodeprint {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.kodeprint picture {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.kodeprint picture img {
+    width: 5%;
+    margin-right: .5rem;
+}
+.links {
+    display: flex;
+    padding-top: .5rem;
+    width: 30%;
+    justify-content: center;
+}
+.links a {
+    padding: 0 .7rem;
+    text-shadow: .2rem 0 .5rem #fff;
+    font-size: 2rem;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-github-square {
+    color: #913399;
+}
+.fa-youtube {
+    color: #c4302b;
+}
+.links a:hover {
+    transform: scale(1.5);
+}
+
 @media (min-width: 414px) {
     .btn_menu {
         font-size: 5rem;
@@ -217,5 +270,10 @@ section {
     }
     .noName {
         font-size: 1.5rem;
+    }
+
+    .links a {
+        font-size: 2.5rem;
+        transition: all .3s ease;
     }
 }
