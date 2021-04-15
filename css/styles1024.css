@@ -8,6 +8,7 @@
         border-bottom: .7rem solid white;
         box-shadow: .5rem 0 1.5rem #000;
         transition: all .3s ease;
+        position: static;
     }
     .logo {
         font-size: 3.5rem;
@@ -41,5 +42,31 @@
     .menu_list li:hover {
         background-color: var(--nav-hover-color);
         border-bottom: none;
+    }
+
+    main {
+        margin-top: 0;
+    }
+    .form_search_pk {
+        position: static;
+        margin: 0 0 0 0;
+        width: 50%;
+    }
+    .form_search_pk input {
+        border-radius: 2.5rem;
+    }
+    .container {
+        margin-top: 4rem;
+    }
+    .card {
+        width: 29%;
+        height: 25rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card {
+        width: 22%;
+        height: 25rem;
     }
 }
